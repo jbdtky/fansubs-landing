@@ -23,7 +23,9 @@ export const Navbar = () => {
     const [isMobile, setIsMobile] = useState(false);
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
+    const closeMenu = () => setIsMenuOpen(false);
+    console.log(isMenuOpen);
+    
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 1024); 
@@ -71,7 +73,7 @@ export const Navbar = () => {
                     >
                         <ul className="flex flex-col lg:flex-row gap-y-8 m-auto text-center gap-x-8 lg:justify-center lg:items-center">
                             {navItems.map((item, key) => (
-                                <NavItem key={key} href={item.href} text={item.text} />
+                                <NavItem key={key} href={item.href} text={item.text} onClick={closeMenu} />
                             ))}
                         </ul>
                         <ul className="lg:hidden flex font-light items-center px-5 sm:px-8 md:px-14 flex justify-between">

@@ -6,7 +6,7 @@ import { BtnLink } from "../shared/BtnLink"
 
 export const GetStarted = () => {
     return (
-        <section className="relative overflow-x-clip">
+        <section className="relative overflow-x-clip scroll-mt-[70px]" id="get-started" >
             <div className="flex gap-x-[25px] bg-[#26093F] w-[103vw] rotate-[-6deg] mb-[-35px] sm:mb-[-100px]">
                 <div className="rfm-child opacity-[10%]">Get Started</div>
                 <div className="rfm-child opacity-[10%]">Get Started</div>

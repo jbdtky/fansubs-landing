@@ -20,7 +20,7 @@ export const ImageText = () => {
       }
 
     return (
-        <section className="overflow-x-clip">
+        <section className="overflow-x-clip scroll-mt-[70px]" id="why-fansubs">
             <Container>
                 <div className="flex flex-col items-center mb-20">
                     <Tag image="💸" text="Why FanSubs?" className="mb-4" />

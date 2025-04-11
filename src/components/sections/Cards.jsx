@@ -19,7 +19,7 @@ const fadeUp = {
 
 export const Cards = () => {
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-x-clip scroll-mt-[70px]" id="how-it-works">
       <Container>
         <div className="flex flex-col items-center mx-auto">
           <Tag image="🌟" text="How it works" className="mb-4" />
