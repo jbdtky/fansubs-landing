@@ -1,70 +1,158 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Light.woff2') format('woff2'),
+      url('/assets/fonts/Montserrat-Light.woff') format('woff'),
+      url('/assets/fonts/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('/assets/fonts/Montserrat-Bold.woff') format('woff'),
+      url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
-a:hover {
-  color: #535bf2;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-ExtraLight.woff2') format('woff2'),
+      url('/assets/fonts/Montserrat-ExtraLight.woff') format('woff'),
+      url('/assets/fonts/Montserrat-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('/assets/fonts/Montserrat-Regular.woff') format('woff'),
+      url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+      url('/assets/fonts/Montserrat-SemiBold.woff') format('woff'),
+      url('/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url('/assets/fonts/Impact.woff2') format('woff2'),
+      url('/assets/fonts/Impact.woff') format('woff'),
+      url('/assets/fonts/Impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+@layer utilities {
+  .bg-body {
+    /* background-image: url("./assets/gradient_bg.svg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #020009;
+  }
+
+  .impact-text {
+    font-family: "Impact", sans-serif;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.boder-dashed {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='35' ry='35' stroke='%238120D5FF' stroke-width='2' stroke-dasharray='12%2c 12' stroke-dashoffset='12' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+/* Marquee */
+
+.rfm-marquee {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  gap: 25px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.rfm-marquee-container {
+  width: 103vw !important;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.rfm-child {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+  gap: 25px;
+  font-size: 96px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  text-transform: capitalize;
+  font-family: 'Impact', sans-serif;
+  color: #fff;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.rfm-child::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background: url("/star_3.svg") no-repeat center center;
+  width: 39px;
+  height: 39px;
+  background-size: cover;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .rfm-marquee {
+    gap: 15px;
   }
-  a:hover {
-    color: #747bff;
+
+  .rfm-child {
+    font-size: 64px;
+    gap: 15px;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .rfm-child::after {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .rfm-marquee {
+    gap: 6px;
+  }
+  .rfm-child {
+    font-size: 24px;
+    gap: 6px;
+  }
+
+  .rfm-child::after {
+    width: 10px;
+    height: 10px;
   }
 }
