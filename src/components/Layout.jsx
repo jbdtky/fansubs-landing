@@ -28,9 +28,9 @@ export const Layout = ({title, children}) => {
             <main className="flex flex-col gap-y-25 md:gap-y-32 relative z-10">
             {!isMobile && (
                     <GradientBackground
-                        count={6}
-                        size={{ min: 800, max: 1200, pulse: 0.7 }}
-                        speed={{ x: { min: 0.5, max: 1.5 }, y: { min: 0.5, max: 1.5 } }}
+                        count={2}
+                        size={{ min: 1400, max: 2000, pulse: 0.1}}
+                        speed={{ x: { min: 0.3, max: 1 }, y: { min: 0.3, max: 1 } }}
                         colors={{
                             particles: [
                                 "#9e6ee6", 
