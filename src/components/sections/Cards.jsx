@@ -19,11 +19,11 @@ const fadeUp = {
 
 export const Cards = () => {
   return (
-    <section className="overflow-x-clip scroll-mt-[70px]" id="how-it-works">
+    <section className="overflow-x-clip scroll-mt-[70px] mb-[100px] lg:mb-[200px]" id="how-it-works">
       <Container>
         <div className="flex flex-col items-center mx-auto">
-          <Tag image="🌟" text="How it works" className="mb-4" />
-          <Title element="h2" className="text-[28px] lg:text-[48px] mb-10 lg:mb-20 impact-text text-white">
+          <Tag image="🌟" text="How it works" className="mb-[10px]" />
+          <Title element="h2" className="text-[28px] lg:text-[48px] mb-10 lg:mb-[70px] impact-text text-white">
             Easy Steps to Create &{" "}
             <span className="relative">
               Grow
@@ -31,7 +31,7 @@ export const Cards = () => {
             </span>
           </Title>
 
-          <div className="flex gap-x-[15px] gap-y-[15px] lg:gap-x-6 lg:gap-y-6 flex-wrap">
+          <div className="flex gap-x-[15px] gap-y-[15px] mx-auto max-w-[1040px] lg:gap-x-6 lg:gap-y-6 flex-wrap">
             {[
               {
                 title: "Create Once, Earn Weekly",
@@ -66,15 +66,15 @@ export const Cards = () => {
                 variants={fadeUp}
                 className={`${
                   i < 2 ? "w-full sm:w-[calc(50%-12px)]" : "w-full"
-                } bg-gradient-to-r from-[#AA65E1] flex-wrap lg:flex-nowrap to-[#F0C8A4] rounded-[35px] px-[20px] py-[30px]  lg:px-[55px] lg:py-[35px] flex ${
-                  i === 2 ? "justify-between items-center gap-5 rounded-[16px]" : "flex-col justify-center"
+                } bg-gradient-to-r from-[#AA65E1] flex-wrap lg:flex-nowrap to-[#F0C8A4] rounded-[25px] lg:rounded-[35px] px-[20px] py-[30px]  lg:px-[55px] lg:py-[35px] flex ${
+                  i === 2 ? "justify-between items-center gap-[20px] lg:gap-[75px] rounded-[16px]" : "flex-col justify-center"
                 }`}
               >
                 <div className="flex flex-col">
                   <Title element="h3" className=" mb-[15px] lg:mb-5 text text-xl lg:text-2xl font-bold text-left text-white">
                     {card.title}
                   </Title>
-                  <ul className="list-disc text-white pl-4 text-sm lg:text-base">
+                  <ul className="list-disc marker:text-[10px] leading-[1.28] text-white pl-[25px] text-sm lg:text-base">
                     {card.content.map((text, index) => (
                       <li key={index}>
                         {text.includes("FanSubs") ? (
@@ -93,7 +93,7 @@ export const Cards = () => {
                   </ul>
                 </div>
                 {card.image && (
-                  <div className="">
+                  <div>
                     <img src={card.image} alt="card" />
                   </div>
                 )}

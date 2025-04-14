@@ -41,7 +41,7 @@ export const Navbar = () => {
 
     return (
         <header
-            className={`fixed inset-x-0 top-0 z-50 py-5 lg:py-6 backdrop-blur-[100px] ${
+            className={`fixed inset-x-0 top-0 z-50 py-5 lg:py-10 backdrop-blur-[100px] ${
                 isMenuOpen && isMobile ? "bg-black" : ""
             }`}
         >

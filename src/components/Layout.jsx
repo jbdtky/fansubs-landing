@@ -25,7 +25,7 @@ export const Layout = ({title, children}) => {
         <>
             <Navbar />
 
-            <main className="flex flex-col gap-y-25 md:gap-y-32 relative z-10">
+            <main className="flex flex-col relative z-10">
             {!isMobile && (
                     <GradientBackground
                         count={2}
