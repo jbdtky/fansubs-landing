@@ -3,6 +3,7 @@ import { Title } from "../shared/Title"
 import { Tag } from "../shared/Tag"
 import underline from "../../assets/underline.svg"
 import { motion } from "framer-motion"
+import backgroundImage from '../../assets/card_bg.png'; 
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -23,7 +24,7 @@ export const Cards = () => {
       <Container>
         <div className="flex flex-col items-center mx-auto">
           <Tag image="🌟" text="How it works" className="mb-[10px]" />
-          <Title element="h2" className="text-[28px] lg:text-[48px] mb-10 lg:mb-[70px] impact-text text-white">
+          <Title element="h2" className="text-[28px] lg:text-[48px] mb-10 lg:mb-[70px] !font-normal lg:font-semibold impact-text text-white">
             Easy Steps to Create &{" "}
             <span className="relative">
               Grow
@@ -62,12 +63,17 @@ export const Cards = () => {
                 custom={i}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0 }}
                 variants={fadeUp}
+                style={{
+                  backgroundImage: `url(${backgroundImage})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
                 className={`${
                   i < 2 ? "w-full sm:w-[calc(50%-12px)]" : "w-full"
-                } bg-gradient-to-r from-[#AA65E1] flex-wrap lg:flex-nowrap to-[#F0C8A4] rounded-[25px] lg:rounded-[35px] px-[20px] py-[30px]  lg:px-[55px] lg:py-[35px] flex ${
-                  i === 2 ? "justify-between items-center gap-[20px] lg:gap-[75px] rounded-[16px]" : "flex-col justify-center"
+                }  flex-wrap lg:flex-nowrap rounded-[25px] lg:rounded-[35px] px-[20px] py-[30px]  lg:px-[55px] lg:py-[35px] flex ${
+                  i === 2 ? "justify-between items-center gap-[20px] lg:gap-[75px] rounded-[16px]" : "flex-col"
                 }`}
               >
                 <div className="flex flex-col">

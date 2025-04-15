@@ -22,7 +22,7 @@ export const List = () => {
                 <motion.div variants={variants.topToBottom} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
                     <Title element="h2" className="text-[20px] lg:text-[36px] mb-[10px] lg:mb-0 font-bold text-left text-transparent bg-clip-text bg-gradient-to-r from-[#AA65E1] to-[#F0C8A4]">Keep More of What You Earn</Title>
                         <div className="relative max-w-[490px] text-center mx-auto mb-[25px] lg:mb-[50px] text-[14px] lg:text-regular">
-                            <p className="text-left lg:text-center text-white">FanSubs has one of the <strong>lowest fees </strong>in the industry – <strong>just 5%!</strong> If you make <strong>$10,000/month</strong>, here’s how much you’d keep using FanSubs vs. other platforms</p>
+                            <p className="text-left lg:text-center text-white font-extralight">FanSubs has one of the <strong className="font-semibold">lowest fees </strong>in the industry – <strong className="font-semibold">just 5%!</strong><br/> If you make <strong className="font-semibold">$10,000/month</strong>, here’s how much you’d keep using FanSubs vs. other platforms</p>
                             <img className="absolute top-[30px] right-[-80px] w-[70px] rotate-[30deg]" src={arrowRight} alt="arrow" />
                         </div>
                 </motion.div>
@@ -50,7 +50,7 @@ export const List = () => {
                                 <p>10-20%</p>
                             </div>
                             <div className="text-[14px] lg:text-[16px] w-1/3 flex justify-end">
-                                <p className="lg:font-regular">$8,000 <br className="block lg:hidden" /> to $9,000</p>
+                                <p className="font-semibold lg:font-regular">$8,000 <br className="block lg:hidden" /> to $9,000</p>
                             </div>
                         </div>
                         <div className="flex flex-row items-center justify-between text-[20px]  px-5 py-[15px]  lg:py-10 lg:px-[50px]">
@@ -61,11 +61,11 @@ export const List = () => {
                                 <p>20%</p>
                             </div>
                             <div className="w-1/3 flex justify-center sm:justify-end">
-                                <p className="text-[14px] lg:text-[16px] lg:font-regular">$8,000</p>
+                                <p className="text-[14px] lg:text-[16px] font-semibold  lg:font-regular">$8,000</p>
                             </div>
                         </div>
                     </div>
-                    <p className="text-white text-left lg:text-center text-[16px] lg:text-[18px]">🚀 That’s <strong>$9,000-$12,000 more</strong> in your pocket every year with FanSubs </p>
+                    <p className="text-white text-left font-extralight lg:text-center text-[16px] lg:text-[18px]">🚀 That’s <strong className="font-semibold">$9,000-$12,000 more</strong> in your pocket every year with FanSubs </p>
                 </motion.div>
            </div>
         </Container>

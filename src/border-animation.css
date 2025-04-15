@@ -32,7 +32,6 @@ button.border-gradient {
 .border-gradient span {
     width: 99%;
     height: 96%;
-    display: block;
     background: linear-gradient(to right, #8120D5, #C397E8);
     border-radius: 16px;
     margin: auto;

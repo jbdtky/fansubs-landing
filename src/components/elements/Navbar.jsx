@@ -42,6 +42,10 @@ export const Navbar = () => {
 
     return (
         <header
+            style={{ 
+                backdropFilter: "blur(100px)", 
+                WebkitBackdropFilter: "blur(100px)"
+            }}
             className={`fixed inset-x-0 top-0 z-50 py-5 lg:py-10 backdrop-blur-[100px] ${
                 isMenuOpen && isMobile ? "bg-black" : ""
             }`}

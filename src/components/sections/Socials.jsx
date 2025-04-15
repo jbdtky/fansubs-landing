@@ -27,7 +27,7 @@ export const Socials = () => {
         shape: "box",
         desktop: { width: 320, height: 79, left: 450, top: 60 },
         tablet: { width: 260, height: 70, left: 240, top: 60 },
-        mobile: { width: 120, height: 30, left: 40, top: 40 },
+        mobile: { width: 120, height: 30, left: 140, top: 50 },
       },
       {
         id: 3,
@@ -68,7 +68,7 @@ export const Socials = () => {
         id: 7,
         src: "/assets/stay_connected.png",
         shape: "box",
-        desktop: { width: 210, height: 114, left: 850, top: 240 },
+        desktop: { width: 210, height: 114, left: 760, top: 240 },
         tablet: { width: 180, height: 100, left: 500, top: 200 },
         mobile: { width: 80, height: 45, left: 100, top: 180 },
       },
@@ -78,7 +78,7 @@ export const Socials = () => {
   useEffect(() => {
     const updateDimensions = () => {
       const padding = 20; 
-      const calculatedWidth = window.innerWidth - padding * 2;
+      const calculatedWidth = wrapperRef.current.offsetWidth;
 
       setWorldWidth(calculatedWidth);
       if (window.innerWidth >= 1024) {

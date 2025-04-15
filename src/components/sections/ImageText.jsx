@@ -47,7 +47,7 @@ export const ImageText = () => {
                     </motion.div>
                     <motion.div className="relative flex-col lg:flex-row lg:w-[43.5%]" variants={variants.rightToLeft} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                         <div className=" right-to-left ">
-                            <div className="absolute -bottom-[20px] left-[50%] translate-x-[-50%] lg:translate-x-0 lg:bottom-[50px] lg:-left-[70px] h-[37px] sm:h-[45px]">
+                            <div className="absolute -bottom-[20px] left-[50%] max-w-[190px] translate-x-[-50%] lg:translate-x-0 lg:bottom-[50px] lg:-left-[70px] h-[37px] sm:h-[45px]">
                                 <img className="hidden lg:block absolute -top-[50px] -left-[30px]" src="/assets/omg.png" alt="image" />
                                 <img className="w-full h-full" src="/assets/quick.png" alt="image" />
                             </div>
@@ -58,7 +58,7 @@ export const ImageText = () => {
                 <div className="flex flex-col-reverse  gap-y-10 lg:flex-row items-start justify-between">
                     <motion.div className="relative flex-col lg:flex-row w-full lg:w-[43.5%]" variants={variants.leftToRight} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                         <div className="left-to-right">
-                            <div className="absolute -bottom-[20px] w-max left-[50%] lg:left-[unset] translate-x-[-50%] lg:translate-x-0  lg:bottom-[50px] lg:-right-[50px]  h-[37px] sm:h-[45px]">
+                            <div className="absolute -bottom-[20px] w-auto max-w-[190px] left-[50%] lg:left-[unset] translate-x-[-50%] lg:translate-x-0  lg:bottom-[50px] lg:-right-[50px]  h-[37px] sm:h-[45px]">
                                 <img className="w-full h-full" src="/assets/fanmail.png" alt="image" />
                             </div>
                             <img src="/assets/image-text_2.png" alt="image" />

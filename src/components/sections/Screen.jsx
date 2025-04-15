@@ -71,10 +71,13 @@ export const Screen = () => {
   );
 
   return (
-    <section className="relative overflow-hidden mb-[160px] sm:mb-[110px]">
+    <section className="relative mb-[160px] sm:mb-[110px]">
       <Container>
         <div className="relative">
-          <img src="/assets/screen.png" alt="screen" />
+          <picture>
+            <source srcSet="/assets/screen_mob.png" media="(max-width: 768px)" />
+            <img src="/assets/screen.png" alt="screen" className="scale-110 md:scale-100 sm:scale-100" />
+          </picture>
         </div>
       </Container>
 
