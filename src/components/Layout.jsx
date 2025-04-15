@@ -26,7 +26,7 @@ export const Layout = ({title, children}) => {
             <Navbar />
 
             <main className="flex flex-col relative z-10">
-            {!isMobile && (
+            {/* {!isMobile && (
                     <GradientBackground
                         count={2}
                         size={{ min: 1400, max: 2000, pulse: 0.1}}
@@ -49,7 +49,7 @@ export const Layout = ({title, children}) => {
                             bottom: 0,
                         }}
                     />
-            )}
+            )} */}
                 {children}
             </main>
 

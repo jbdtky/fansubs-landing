@@ -75,6 +75,7 @@ export const Navbar = () => {
                             {navItems.map((item, key) => (
                                 <NavItem key={key} href={item.href} text={item.text} onClick={closeMenu} />
                             ))}
+                            
                         </ul>
                         <ul className="lg:hidden flex font-light items-center px-5 sm:px-8 md:px-14 flex justify-between">
                             {socials.map((item, key) => (
