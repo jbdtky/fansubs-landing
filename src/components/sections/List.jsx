@@ -22,8 +22,8 @@ export const List = () => {
                 <motion.div variants={variants.topToBottom} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
                     <Title element="h2" className="text-[20px] lg:text-[36px] mb-[10px] lg:mb-0 font-bold text-left text-transparent bg-clip-text bg-gradient-to-r from-[#AA65E1] to-[#F0C8A4]">Keep More of What You Earn</Title>
                         <div className="relative max-w-[490px] text-center mx-auto mb-[25px] lg:mb-[50px] text-[14px] lg:text-regular">
-                            <p className="text-left lg:text-center text-white font-extralight">FanSubs has one of the <strong className="font-semibold">lowest fees </strong>in the industry – <strong className="font-semibold">just 5%!</strong><br/> If you make <strong className="font-semibold">$10,000/month</strong>, here’s how much you’d keep using FanSubs vs. other platforms</p>
-                            <img className="absolute top-[30px] right-[-80px] w-[70px] rotate-[30deg]" src={arrowRight} alt="arrow" />
+                            <p className="text-left lg:text-center text-white max-w-[90%] sm:max-w-full font-extralight">FanSubs has one of the <strong className="font-semibold">lowest fees </strong>in the industry – <strong className="font-semibold">just 5%!</strong><br/> If you make <strong className="font-semibold">$10,000/month</strong>, here’s how much you’d keep using FanSubs vs. other platforms</p>
+                            <img className="sm:absolute top-[30px] ml-auto sm:ml-0 w-[45px] right-[-80px] sm:w-[70px] rotate-[30deg]" src={arrowRight} alt="arrow" />
                         </div>
                 </motion.div>
                 <motion.div className="w-full" variants={variants.bottomToTop} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
