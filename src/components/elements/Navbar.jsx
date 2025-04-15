@@ -4,6 +4,7 @@ import logo from "../../assets/logo.svg";
 import burger from "../../assets/burger.svg";
 import close from "../../assets/close.svg";
 import { NavItem } from "../shared/NavItem";
+import { BtnLink } from "../shared/BtnLink";
 
 const navItems = [
     { href: "#how-it-works", text: "How it Works" },
@@ -75,7 +76,9 @@ export const Navbar = () => {
                             {navItems.map((item, key) => (
                                 <NavItem key={key} href={item.href} text={item.text} onClick={closeMenu} />
                             ))}
-                            
+                            <li>
+                                <BtnLink className="navbar-button" href="/auth" text="Log In" />
+                            </li>
                         </ul>
                         <ul className="lg:hidden flex font-light items-center px-5 sm:px-8 md:px-14 flex justify-between">
                             {socials.map((item, key) => (

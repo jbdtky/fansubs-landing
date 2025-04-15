@@ -8,7 +8,9 @@ export const Footer = () => {
                 <div className="flex sm:flex-row text-white flex-col justify-between mb-[40px] lg:mb-[80px] items-center gap-y-[45px] lg:gap-y-0">
                     <div className="flex flex-col text-[14px] lg:text-[16px] items-center lg:items-start gap-[20px] lg:gap-y-2">
                         <p>Powered by</p>
-                        <img src={logo} alt="logo" className="lg:h-[50px] sm:h-[42px]" />
+                        <a href="https://influencers.com/" target="_blank">
+                            <img src={logo} alt="logo" className="lg:h-[50px] sm:h-[42px]" />
+                        </a>
                     </div>
                     <div className="flex items-center sm:items-start flex-col gap-[10px] lg:gap-y-2">
                         <p className="font-bold text-[24px]">CONTACT US</p>

@@ -78,7 +78,7 @@ export const AuthPage = () => {
                 <button
                   type="button"
                   onClick={togglePasswordVisibility}
-                  className="absolute right-5 top-[50%] cursor-pointer  text-sm text-[#C397E8] hover:underline"
+                  className="absolute right-5 top-[50%] cursor-pointer translate-y-[3px]  text-sm text-[#C397E8] hover:underline"
                 >
                   <img src={password} alt="password" />
                 </button>
