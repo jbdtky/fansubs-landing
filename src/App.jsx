@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useLayoutEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Layout } from "./components/Layout"
 import { Cards } from "./components/sections/Cards";
 import { Hero } from "./components/sections/Hero";
@@ -8,6 +9,18 @@ import { List } from "./components/sections/List";
 import { GetStarted } from "./components/sections/GetStarted";
 import { Socials } from "./components/sections/Socials";
 import { AuthPage } from "./components/AuthPage";
+import { PrivacyPolicy } from "./components/PrivacyPolicyPage";
+
+
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }, [location.pathname]);
+
+  return children;
+};
 
 function HomePage() {
   return (
@@ -26,10 +39,13 @@ function HomePage() {
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/auth" element={<AuthPage />} />
-      </Routes>
+      <Wrapper>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/auth" element={<AuthPage />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          </Routes>
+      </Wrapper>
     </Router>
   );
 }

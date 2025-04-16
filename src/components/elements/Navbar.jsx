@@ -5,6 +5,7 @@ import burger from "../../assets/burger.svg";
 import close from "../../assets/close.svg";
 import { NavItem } from "../shared/NavItem";
 import { BtnLink } from "../shared/BtnLink";
+import { Link } from "react-router-dom";
 
 const navItems = [
     { href: "#how-it-works", text: "How it Works" },
@@ -53,9 +54,9 @@ export const Navbar = () => {
             <Container>
                 <nav className="w-full flex justify-between gap-6 relative">
                     <div className="min-w-max inline-flex relative">
-                        <a href="/" className="relative flex items-center gap-3">
+                        <Link to={"/"} className="relative flex items-center gap-3">
                             <img src={logo} alt="FanSubs Logo" className="w-[125px] h-[40px] lg:w-50 lg:h-16" />
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Burger Button */}
