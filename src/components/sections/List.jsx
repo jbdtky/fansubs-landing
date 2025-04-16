@@ -30,38 +30,38 @@ export const List = () => {
                     <div className="w-full relative rounded-[35px] py-[15px] lg:py-0 text-sm lg:text-base text-white boder-dashed mb-5 lg:mb-10">
                         <div className="flex flex-row items-center justify-between text-[20px] px-5 py-[15px] lg:py-10 lg:px-[50px] border-b-[1px]" style={{ borderColor: 'rgba(129, 32, 213, 0.2)' }}>
                             <div className="w-[125px] sm:w-1/3">
-                                <p className="text-[14px] lg:text-[16px] font-regular lg:font-semibold">FanSubs</p>
+                                <p className="text-[14px] lg:text-[20px] font-regular lg:font-semibold">FanSubs</p>
                             </div>
                             <div className="w-1/3 flex justify-center">
-                                <p className="text-[14px] lg:text-[16px] font-semibold">5%</p>
+                                <p className="text-[14px] lg:text-[20px] font-semibold">5%</p>
                             </div>
                             <div className="w-1/3 flex justify-center sm:justify-end text-right">
-                                <p className="text-[14px] lg:text-[16px] relative font-semibold">
+                                <p className="text-[14px] lg:text-[20px] relative font-semibold">
                                     <span>$9,500</span>
                                     <img src={underline} alt="underline" className="absolute -bottom-[10px] left-0" />
                                     </p>
                             </div>
                         </div>
                         <div className="flex flex-row items-center justify-between text-[20px]  px-5 py-[15px] lg:py-10 lg:px-[50px] border-b-[1px]" style={{ borderColor: 'rgba(129, 32, 213, 0.2)' }}>
-                            <div className="text-[14px] lg:text-[16px] w-[125px] sm:w-1/3">
+                            <div className="text-[14px] lg:text-[20px] w-[125px] sm:w-1/3">
                                 <p>Patreon,<br /> Buy Me a Coffee</p>
                             </div>
-                            <div className="text-[14px] lg:text-[16px] w-1/3 flex justify-center">
+                            <div className="text-[14px] lg:text-[20px] w-1/3 flex justify-center">
                                 <p>10-20%</p>
                             </div>
-                            <div className="text-[14px] lg:text-[16px] w-1/3 flex justify-end">
+                            <div className="text-[14px] lg:text-[20px] w-1/3 flex justify-end">
                                 <p className="font-semibold lg:font-normal">$8,000 <br className="block lg:hidden" /> to $9,000</p>
                             </div>
                         </div>
                         <div className="flex flex-row items-center justify-between text-[20px]  px-5 py-[15px]  lg:py-10 lg:px-[50px]">
-                            <div className="text-[14px] lg:text-[16px] w-[125px] sm:w-1/3">
+                            <div className="text-[14px] lg:text-[20px] w-[125px] sm:w-1/3">
                                 <p>Passes, FanFix</p>
                             </div>
-                            <div className="text-[14px] lg:text-[16px] w-1/3 flex justify-center">
+                            <div className="text-[14px] lg:text-[20px] w-1/3 flex justify-center">
                                 <p>20%</p>
                             </div>
                             <div className="w-1/3 flex justify-center sm:justify-end">
-                                <p className="text-[14px] lg:text-[16px] font-semibold  lg:font-normal">$8,000</p>
+                                <p className="text-[14px] lg:text-[20px] font-semibold  lg:font-normal">$8,000</p>
                             </div>
                         </div>
                     </div>
