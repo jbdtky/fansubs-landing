@@ -36,7 +36,7 @@ export const Socials = () => {
         shape: "box",
         desktop: { width: 285, height: 79, left: 700, top: 80 },
         tablet: { width: 240, height: 70, left: 400, top: 70 },
-        mobile: { width: 110, height: 30, left: 80, top: 60 },
+        mobile: { width: 110, height: 30, left: 120, top: 60 },
       },
       {
         id: 4,

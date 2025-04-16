@@ -37,21 +37,21 @@ export const Cards = () => {
               {
                 title: "Create Once, Earn Weekly",
                 content: [
-                  "Schedule exclusive content drops for your fans every Friday—no daily posting grind, no endless perks to manage.",
+                  "Schedule exclusive content drops for your fans every <strong>Friday</strong>—no daily posting grind, no endless perks to manage.",
                   "Just consistent engagement that builds anticipation.",
                 ],
               },
               {
                 title: "Low Fees, More Earnings",
                 content: [
-                  "FanSubs takes only 5%, one of the lowest rates in the industry.",
+                  "FanSubs takes only <strongs>5%</strongs>, one of the lowest rates in the industry.",
                   "Stay consistent, and you keep more of what you make.",
                 ],
               },
               {
                 title: "Seamless Workflow",
                 content: [
-                  "AI-powered content automation + Notion integration makes planning effortless.",
+                  "AI-powered content automation + <strong>Notion integration</strong> makes planning effortless.",
                   "No more juggling multiple tools—FanSubs fits into how you already create.",
                   "Manage every aspect of your weekly earnings and content schedule.",
                 ],
@@ -81,21 +81,9 @@ export const Cards = () => {
                     {card.title}
                   </Title>
                   <ul className="list-disc marker:text-[10px] leading-[1.28] text-white pl-[25px] text-sm lg:text-base">
-                    {card.content.map((text, index) => (
-                      <li key={index}>
-                        {text.includes("FanSubs") ? (
-                          <>
-                            FanSubs takes only <strong>5%</strong>, one of the lowest rates in the industry.
-                          </>
-                        ) : text.includes("Friday") ? (
-                          <>
-                            Schedule exclusive content drops for your fans every <strong>Friday</strong>—no daily posting grind, no endless perks to manage.
-                          </>
-                        ) : (
-                          text
-                        )}
-                      </li>
-                    ))}
+                      {card.content.map((text, index) => (
+                        <li key={index} dangerouslySetInnerHTML={{ __html: text }} />
+                      ))}
                   </ul>
                 </div>
                 {card.image && (

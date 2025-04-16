@@ -12,7 +12,7 @@ export const GetStarted = () => {
                 <div className="rfm-child opacity-[10%]">Get Started</div>
                 <div className="rfm-child opacity-[10%]">Get Started</div>
             </div>
-            <Marquee autoFill={true} className="flex gap-x-[25px] bg-[#8120D5] rotate-[4deg]">
+            <Marquee direction="right" autoFill={true} className="flex gap-x-[25px] bg-[#8120D5] rotate-[4deg]">
                 Get started
             </Marquee>
             <Container>

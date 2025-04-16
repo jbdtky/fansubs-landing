@@ -15,8 +15,13 @@ button.border-gradient {
 .navbar-button.border-gradient {
     width: 100px;
     height: 40px;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.navbar-button.border-gradient span {
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 575px) {

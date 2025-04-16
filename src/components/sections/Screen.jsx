@@ -6,6 +6,7 @@ import { Container } from "../shared/Container";
 
 export const Screen = () => {
   const [init, setInit] = useState(false);
+  const isMobile = window.innerWidth < 768;
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -41,8 +42,8 @@ export const Screen = () => {
           direction: "out",
         },
         number: {
-          value: 80,
-          density: { enable: true, area: 800 },
+         value: isMobile ? 20 : 60,
+          // density: { enable: true, area: 800 },
         },
         opacity: { value: { min: 0.5, max: 1 } }, 
         position: {

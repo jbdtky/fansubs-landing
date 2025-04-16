@@ -24,7 +24,7 @@ export const ImageText = () => {
             <Container>
                 <div className="flex flex-col items-center mb-[30px] lg:mb-20">
                     <Tag image="💸" text="Why FanSubs?" className="mb-[10px]" />
-                    <Title element="h2" className="text-[28px] lg:text-[48px] impact-text text-white">Keep More of What You Earn with <span className="relative">
+                    <Title element="h2" className="text-[28px] lg:text-[48px] !font-normal impact-text text-white">Keep More of What You Earn with <span className="relative">
                         FanSubs
                         <img className="absolute left-0 top-full w-full" src={underline} alt="underline" />
 
@@ -49,7 +49,7 @@ export const ImageText = () => {
                         <div className=" right-to-left ">
                             <div className="absolute -bottom-[20px] left-[50%] max-w-[190px] translate-x-[-50%] lg:translate-x-0 lg:bottom-[50px] lg:-left-[70px] h-[37px] sm:h-[45px]">
                                 <img className="hidden lg:block absolute -top-[50px] -left-[30px]" src="/assets/omg.png" alt="image" />
-                                <img className="w-full h-full" src="/assets/quick.png" alt="image" />
+                                <img className="w-full h-full object-contain" src="/assets/quick.png" alt="image" />
                             </div>
                             <img src="/assets/image-text_1.png" alt="image" />
                         </div>
@@ -59,7 +59,7 @@ export const ImageText = () => {
                     <motion.div className="relative flex-col lg:flex-row w-full lg:w-[43.5%]" variants={variants.leftToRight} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                         <div className="left-to-right">
                             <div className="absolute -bottom-[20px] w-auto max-w-[190px] left-[50%] lg:left-[unset] translate-x-[-50%] lg:translate-x-0  lg:bottom-[50px] lg:-right-[50px]  h-[37px] sm:h-[45px]">
-                                <img className="w-full h-full" src="/assets/fanmail.png" alt="image" />
+                                <img className="w-full h-full object-contain" src="/assets/fanmail.png" alt="image" />
                             </div>
                             <img src="/assets/image-text_2.png" alt="image" />
                         </div>
