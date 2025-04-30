@@ -1,22 +1,19 @@
-import { useEffect } from "react"
-import { Navbar } from "./elements/Navbar"
-import { Footer } from "./elements/Footer"
+import { useEffect } from "react";
+import { Navbar } from "./elements/Navbar";
+import { Footer } from "./elements/Footer";
 
-export const Layout = ({title, children}) => {
+export const Layout = ({ title, children }) => {
+  useEffect(() => {
+    document.title = title ?? "FanSubs: Easy Earnings. Happy Fans.";
+  }, [title]);
 
-    useEffect(() => {
-        document.title = title;
-    }, [title]);
+  return (
+    <>
+      <Navbar />
 
-    return (
-        <>
-            <Navbar />
+      <main className="flex flex-col relative z-10">{children}</main>
 
-            <main className="flex flex-col relative z-10">
-                {children}
-            </main>
-
-            <Footer />
-        </>
-    );
-}
+      <Footer />
+    </>
+  );
+};

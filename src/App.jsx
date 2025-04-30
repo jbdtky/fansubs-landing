@@ -26,7 +26,7 @@ const Wrapper = ({ children }) => {
 
 function HomePage() {
   return (
-    <Layout title="FanSubs">
+    <Layout>
       <Hero />
       <Screen />
       <Cards />
