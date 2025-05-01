@@ -40,7 +40,7 @@ export const Hero = () => {
               alt="decor"
             />
             <BtnLink
-              href="https://app.fansubs.xyz/auth/login"
+              href="https://app.fansubs.xyz/join-fansubs"
               text="Sign Up for Early Access"
             />
           </div>
