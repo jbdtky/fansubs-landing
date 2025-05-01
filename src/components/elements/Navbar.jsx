@@ -14,10 +14,13 @@ const navItems = [
 ];
 
 const socials = [
-  { href: "https://linkedin.com", text: "linkedin" },
+  {
+    href: "https://www.linkedin.com/company/theinfluencershq/about/",
+    text: "linkedin",
+  },
   { href: "https://www.instagram.com/fansubsapp", text: "instagram" },
-  { href: "https://www.facebook.com", text: "Facebook" },
-  { href: "https://tiktok.com", text: "TikTok" },
+  { href: "https://www.facebook.com/fansubsapp", text: "Facebook" },
+  { href: "https://www.tiktok.com/@theinfluencershq", text: "TikTok" },
 ];
 
 export const Navbar = () => {

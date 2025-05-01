@@ -31,7 +31,7 @@ export const Socials = () => {
     },
     {
       id: 3,
-      link: "https://www.tiktok.com/fansubsapp",
+      link: "https://www.tiktok.com/@theinfluencershq",
       text: "tiktok",
       shape: "box",
       desktop: { width: 285, height: 79, left: 700, top: 80 },
@@ -40,7 +40,7 @@ export const Socials = () => {
     },
     {
       id: 4,
-      link: "https://www.linkedin.com/fansubsapp",
+      link: "https://www.linkedin.com/company/theinfluencershq/about/",
       text: "linkedin",
       shape: "box",
       desktop: { width: 290, height: 79, left: 150, top: 290 },
