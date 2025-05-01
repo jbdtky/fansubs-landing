@@ -13,6 +13,7 @@ import { ImageText } from "./components/sections/ImageText";
 import { List } from "./components/sections/List";
 import { GetStarted } from "./components/sections/GetStarted";
 import { Socials } from "./components/sections/Socials";
+import { Analytics } from "@vercel/analytics/react";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -34,6 +35,7 @@ function HomePage() {
       <List />
       <GetStarted />
       <Socials />
+      <Analytics />
     </Layout>
   );
 }
