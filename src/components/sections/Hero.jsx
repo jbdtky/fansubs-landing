@@ -41,7 +41,7 @@ export const Hero = () => {
             />
             <BtnLink
               href="https://app.fansubs.xyz/join-fansubs"
-              text="Sign Up for Early Access"
+              text="Sign Up to Start Earning"
             />
           </div>
         </div>
